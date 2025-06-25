@@ -19,3 +19,11 @@ sortedNumber.addEventListener('click', ()=> {
   if (fullscreen) {document.exitFullscreen(), fullscreen=false}
   else {document.documentElement.requestFullscreen(), fullscreen=true}
 })
+
+
+// INIT
+sortedNumber.innerText = "*"
+window.onload = function () {
+  channel.postMessage("*");
+};
+
