@@ -9,6 +9,7 @@
 
 html, body{
   height: 100%;
+  overflow-x: hidden;
 }
 
 body{
@@ -95,4 +96,30 @@ button:hover {
 /* =========================================== */
 .view-full {
   width: 100%;
+}
+
+
+/* =================================GPT============================== */
+.number-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+}
+
+.slide-in-right {
+  transform: translate(150%, -50%);
+  opacity: 0;
+}
+
+.slide-out-left {
+  transform: translate(-150%, -50%);
+  opacity: 0;
+}
+
+.slide-active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }
